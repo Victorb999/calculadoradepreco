@@ -3,15 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "reactstrap": "^8.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "compile-sass": "node-sass src/scss/estilao.scss src/css/estilao.css",
+    "minify-sass": "node-sass src/scss/estilao.scss src/css/estilao.min.css --output-style compressed",
+    "map-sass": "node-sass src/scss/estilao.scss src/css/estilao.css --source-map true"
   },
   "eslintConfig": {
     "extends": "react-app"

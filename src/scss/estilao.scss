@@ -1,0 +1,41 @@
+@import 'variaveis';
+
+body{
+    background-color:$marrom;
+    font-family: $font-family-sans-serif;
+}
+
+.card-register {
+    background-color:$palha;
+    border-radius: 8px;
+    color: $marrom;
+    max-width: 1000px;
+    margin: 20px 0 70px;
+    min-height: 300px;
+    padding: 20px;
+  
+    & label {
+      margin-top: 15px;
+    }
+    & .card-title {
+      color: #B33C12;
+      text-align: center;
+    }
+    & .btn {
+      margin-top: 30px;
+      background-color:$rosa;
+      border: none;
+    }
+    & .forgot {
+      text-align: center;
+    }  
+    input{
+        outline: none;
+    }
+  }
+  .desc{
+      font-style: italic;
+  }
+  .rodape{
+      color: $palha;
+  }
